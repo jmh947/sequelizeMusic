@@ -1,0 +1,44 @@
+<h1>Songs on Que</h1>
+
+<ul>
+  {{#each song}}
+    {{#unless addedPlaylist}}
+      {{> music-block}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Playlist!</h2>
+
+<ul>
+  {{#each song}}
+    {{#if addedPlaylist}}
+      {{> music-block}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Check out these new songs!</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="song">Song Title:</label>
+    <input type="text" id="song" name="title">
+  </div>
+
+  <div class="form-group">
+    <label for="listen">Wanna Jam?</label><br>
+    <input type="radio" name="listen" value="1" checked> Yes!<br>
+    <input type="radio" name="listen" value="0"> Not now.
+  </div>
+
+  <br>
+
+  <button type="submit">Add Song</button>
+
+  <br>
+  <br>
+
+  <button type="delete">Delete Song</button>
+    
+</form>
