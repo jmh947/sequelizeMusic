@@ -1,7 +1,7 @@
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: gold;
   }
   
   .label {
@@ -21,4 +21,15 @@ li {
 img {
   width: 100%;
   height: 100%;
+}
+
+body{
+/* background-image: url("../../assets/img/music.png"); width: 100%; height: 100%; */
+background-repeat: no-repeat;
+text-align: right;
+}
+
+.box {
+border: 2px white;
+color: green;
 }
