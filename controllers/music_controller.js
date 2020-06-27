@@ -28,12 +28,8 @@ router.get("/api/music/listen/:title" , function(req, res){
     spotify
     .search({ type: "track", query: req.params.title})
     .then(function (response) {
-      //console.log(response.tracks.items[0]);
-    //   console.log(response.tracks.items[0].album.name);
-    //   console.log(response.tracks.items[0].album.artists[0].name);
-    //   console.log(response.tracks.items[0].name);
-    //   console.log(response.tracks.items[0].preview_url);
-    //   console.log(response.tracks.items[0].album.images[0].url);
+      console.log(response)
+
       var music = {
           name: response.tracks.items[0].name,
           artist: response.tracks.items[0].album.artists[0].name,
@@ -94,5 +90,6 @@ router.delete("/api/music/:id", function (req, res) {
       res.json(err);
     });
 });
+
 
 module.exports = router;
