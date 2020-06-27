@@ -18,18 +18,36 @@ li {
     margin-bottom: 5px;
   }
 
-img {
-  width: 100%;
-  height: 100%;
+button {
+  align-items: center;
+  box-shadow: 3px 4px blue;
 }
+
 
 body{
-/* background-image: url("../../assets/img/music.png"); width: 100%; height: 100%; */
-background-repeat: no-repeat;
-text-align: right;
+background-color: crimson;
 }
 
+
+h2 {
+  text-align: center;
+}
 .box {
 border: 2px white;
-color: green;
+color: rgb(16, 46, 214);
+}
+
+.card {
+  margin: 0 auto; 
+  float: none; 
+  margin-bottom: 10px;
+}
+
+.submit {
+  height:40px; 
+  width:100px; 
+  margin: -30px -80px; 
+  position:relative;
+  top:50%; 
+  left:50%;
 }
