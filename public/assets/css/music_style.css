@@ -1,9 +1,14 @@
+body {
+  background-color: black !important;
+}
+
 li {
     padding: 5px;
     margin: 5px;
-    background: gold;
+    background: rgb(228, 220, 220);
   }
   
+
   .label {
     font-weight: bold;
   }
@@ -20,27 +25,38 @@ li {
 
 button {
   align-items: center;
-  box-shadow: 3px 4px blue;
+  box-shadow: 3px 4px black;
 }
-
-
-body{
-background-color: crimson;
-}
-
 
 h2 {
   text-align: center;
+  color: black
+}
+
+h3 {
+  text-align: center;
+  color: black
+}
+
+.song {
+  text-align: center;
+  color: black;
 }
 .box {
-border: 2px white;
-color: rgb(16, 46, 214);
+border: 2px grey;
+color: black;
+background-color: #9f99a0;
 }
 
 .card {
   margin: 0 auto; 
   float: none; 
   margin-bottom: 10px;
+  border: 7px solid grey !important;
+}
+
+.card-body {
+  background-color: rgb(107, 102, 114);
 }
 
 .submit {
@@ -50,4 +66,12 @@ color: rgb(16, 46, 214);
   position:relative;
   top:50%; 
   left:50%;
+}
+
+.delete-song {
+  background-color: rgb(230, 36, 101);
+}
+
+.change-playlist {
+  background-color: rgb(107, 228, 201);
 }
